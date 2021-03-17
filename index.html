@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="fonts.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="LogicForStatus.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="container">
+        <div class="Dashboard-div">
+            <h1><i id="dash-icon" class="fas fa-comments-dollar"></i> Dashboard</h1>
+            <div class="icons-1">
+                <a><i id="Home" class="fas fa-home"></i><span>Home</span> </a>
+                <a><i id="Dashboard" class="fas fa-columns"></i><span>Dashboard</span></a>
+                <a><i id="Assessment" class="fad fa-kaaba"></i><span>Assessment</span></a>
+                <a><i id="Inbox" class="fas fa-inbox"></i><span>Inbox</span></a>
+                <a><i id="Users" class="fas fa-user-friends"></i><span>Users</span></a>
+                <a><i id="Profile" class="fas fa-user-alt"></i><span>Profile</span></a>
+                <p id="assess-notification">12</p>
+                <p id="input-notification">01</p>
+            </div>
+            <div class="icons-2">
+                <a ><i class="fas fa-cog"></i><span>Settings</span></a>
+                <a><i class="fas fa-question-circle"></i><span>Help</span></a>
+                <a><i class="fas fa-comment-alt-dots"></i><span>Feedback</span></a>
+            </div>
+        </div>
+        <div class="top-div">
+            <span>
+                <img src="images/000.jpg" alt="image">
+            </span>
+            <span>
+                <a id="Name" href="#">Ketty Petty</a>
+                <p id="Location"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp;Morocco , Rabat</p>
+            </span>
+            <span><i class="fas fa-ellipsis-v"></i></span>
+            <span>
+                <input type="text" placeholder="     Search">
+                <i id="search-icon" class="far fa-search"></i>
+            </span>
+            <span><i class="fas fa-bell-on"></i></span>
+        </div>
+        <div class="statistics-curve">
+            <h2>Overail Stats</h2>
+            <img id="curve" src="images/scatter-chart-as-histogram-with-normal-curve-mean-and-standard-deviation.png" alt="">
+        </div>
+        <div class="social-media-traffic">
+            <h1>Social Media Traffic</h1>
+
+            <span class="Months-Statistics">
+                <h2>January</h2>
+                <span>
+                    <div id="purple"></div>
+                    <div id="pink"></div>
+                    <div id="yellow"></div>
+                </span>
+                <span class="social-M">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Linkden</a>
+                </span>
+            </span>
+            <span class="Months-Statistics">
+                <h2>February</h2>
+                <span>
+                    <div id="purple"></div>
+                    <div id="pink"></div>
+                    <div id="yellow"></div>
+                </span>
+                <span class="social-M">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Linkden</a>
+                </span>
+            </span>
+            <span class="Months-Statistics">
+                <h2>March</h2>
+                <span>
+                    <div id="purple"></div>
+                    <div id="pink"></div>
+                    <div id="yellow"></div>
+                </span>
+                <span class="social-M">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Linkden</a>
+                </span>
+            </span>
+        </div>
+        <div class="Table-users">
+            <h1>User Stats</h1>
+
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Status</th>
+                    <th>Option</th>
+                </tr>
+                <tr>
+                    <td><img src="images/000.jpg" alt="">&nbsp; <span>Kabbo Liate</span> </td>
+                    <td>September 25 2017</td>
+                    <td id="type-blue"><p>Premuim</p> </td>
+                    <td id="status">Open</td>
+                    <td><input id="checkbox" type="checkbox" onclick="ChangeStatueColor()" checked></td>
+                </tr>
+                <tr>
+                    <td><img src="images/000.jpg" alt="">&nbsp; <span>Zakaria Red</span> </td>
+                    <td>September 25 2017</td>
+                    <td id="type-orange"><p>Premuim</p> </td>
+                    <td id="status_1">Closed</td>
+                    <td><input id="checkbox_1" type="checkbox"onclick="ChangeStatueColor()"></td>
+                </tr>
+                <tr>
+                    <td><img src="images/000.jpg" alt="">&nbsp; <span>Hicham Miftah</span> </td>
+                    <td>September 25 2017</td>
+                    <td id="type-orange"><p>Premuim</p> </td>
+                    <td id="status_2">Open</td>
+                    <td><input id="checkbox_2" type="checkbox"onclick="ChangeStatueColor()" checked></td>
+                </tr>
+                <tr>
+                    <td><img src="images/000.jpg" alt="">&nbsp; <span>Ziko Red1</span> </td>
+                    <td>September 25 2017</td>
+                    <td id="type-blue"><p>Premuim</p> </td>
+                    <td id="status_3">Open</td>
+                    <td><input id="checkbox_3" type="checkbox"onclick="ChangeStatueColor()" checked></td>
+                </tr>
+            </table>
+        </div>
+        <div class="Revenue">
+            <span class="Revenue_1">
+                <h1>Revenue</h1>
+                <h2>$250,000</h2>
+                <h3>July</h3>
+            </span>
+            <span class="Revenue_2">
+                <h1>Revenue</h1>
+                <h2>$102,000</h2>
+                <h3>August</h3>
+            </span>
+            <span class="Revenue_2">
+                <h1>Revenue</h1>
+                <h2>$360,000</h2>
+                <h3>September</h3>
+            </span>
+        </div>
+    </nav>
+</body>
+</html>
